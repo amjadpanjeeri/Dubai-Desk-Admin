@@ -18,7 +18,7 @@ function RegisteredUsers({ children }) {
                   <div className="card-tools">
                     <div
                       className="input-group input-group-sm"
-                      style={{ width: "150px" }}
+                      style={{ width: "150px" }} 
                     ></div>
                   </div>
                 </div>
