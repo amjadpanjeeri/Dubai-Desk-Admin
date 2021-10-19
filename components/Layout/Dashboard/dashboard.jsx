@@ -16,7 +16,7 @@ function DashBoard(props) {
                                 <div className="icon">
                                     <i className="ion ion-bag"></i>
                                 </div>
-                                <a href="#" className="small-box-footer">More info <i className="fas fa-arrow-circle-right"></i></a>
+                                <a href="/RegisteredUsers" className="small-box-footer">More info <i className="fas fa-arrow-circle-right"></i></a>
                             </div>
                         </div>
                         <div className="col-lg-3 col-6">
