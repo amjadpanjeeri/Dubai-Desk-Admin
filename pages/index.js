@@ -1,5 +1,5 @@
-// import Head from "next/head";
-// import Image from "next/image";
+import Head from "next/head";
+import Image from "next/image";
 import DashBoard from "../components/Layout/Dashboard/dashboard";
 import styles from "../styles/Home.module.css";
 
