@@ -4,7 +4,7 @@ import Loader from './PreLoader/preloader'
 import Footer from './Footer/footer'
 import SideBar from './SideBar/sidebar'
 import TopHeader from './TopHeader/topHeader'
-import DashBoard from './Dashboard/dashboard'
+// import DashBoard from './Dashboard/dashboard'
 export default function Layout({ children }) {
     return (
         <div>
@@ -12,8 +12,7 @@ export default function Layout({ children }) {
             <Header />
             <SideBar />
             <div className="content-wrapper">
-                <TopHeader />
-                <DashBoard/>
+                {/* <DashBoard/> */}
                 {children}
             </div>
             <Footer />

@@ -14,11 +14,6 @@
     "static/development/_ssgManifest.js"
   ],
   "pages": {
-    "/": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/index.js"
-    ],
     "/RegisteredUsers": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -33,6 +28,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
+    ],
+    "/bookingRequests": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/bookingRequests.js"
     ]
   },
   "ampFirstPages": []
