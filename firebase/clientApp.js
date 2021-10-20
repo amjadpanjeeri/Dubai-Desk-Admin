@@ -1,4 +1,4 @@
-import firebase from "firebase/app";
+import * as firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/firestore";
 import "firebase/storage";
@@ -16,9 +16,9 @@ const firebaseConfig = {
 // if (!firebase.getApps.length) {
 firebase.initializeApp(firebaseConfig);
 // }
-// console.log(fetchSignInMethodsForEmail);
 
 const fire = firebase;
+console.log(fire.FirebaseError);
 const auth = firebase.auth();
 const db = firebase.firestore();
 const storage = firebase.storage();
