@@ -2,6 +2,6 @@
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
-  "/bookingRequests": "pages/bookingRequests.js",
-  "/dashboard": "pages/dashboard.js"
+  "/Workspaces": "pages/Workspaces.js",
+  "/RegisteredUsers": "pages/RegisteredUsers.js"
 }
