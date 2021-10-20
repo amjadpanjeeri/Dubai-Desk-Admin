@@ -21,7 +21,7 @@ export default function header() {
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#" role="button">
+                        <a className="nav-link" href="/signin" role="button">
                             logout
                         </a>
                     </li>

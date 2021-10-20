@@ -54,6 +54,13 @@ export default function SideBar() {
                                     </p>
                                 </Link>
                             </li>
+                            <li className="nav-item menu-open">
+                                <Link href="/signin" className="nav-link">
+                                    <p className="nav-link">
+                                        Logout
+                                    </p>
+                                </Link>
+                            </li>
                         </ul>
                     </nav>
                 </div>

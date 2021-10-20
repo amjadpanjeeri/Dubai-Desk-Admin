@@ -1,19 +1,30 @@
 import firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/firestore";
+import "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: process.env.process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
-  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
+  apiKey: "AIzaSyDVVUUk03oVhS2w-Z-pHIMEDl2xgXJgR6k",
+  authDomain: "hello-al-bab.firebaseapp.com",
+  projectId: "hello-al-bab",
+  storageBucket: "hello-al-bab.appspot.com",
+  messagingSenderId: "347417592146",
+  appId: "1:347417592146:web:84dccedc6f36e657ad3a8b",
+  measurementId: "G-HLPKTFZLX4",
 };
 
-if (!firebase.getApps.length) {
-  firebase.initializeApp(firebaseConfig);
-}
+// if (!firebase.getApps.length) {
+firebase.initializeApp(firebaseConfig);
+// }
+// console.log(fetchSignInMethodsForEmail);
 
-export default firebase;
+const fire = firebase;
+const auth = firebase.auth();
+const db = firebase.firestore();
+const storage = firebase.storage();
+
+export default { auth, db, storage, fire };
+
+export const logoutAll = () => {
+  auth.signOut();
+};

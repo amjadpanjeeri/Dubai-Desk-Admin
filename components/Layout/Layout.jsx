@@ -9,12 +9,7 @@ export default function Layout({ children }) {
     return (
         <div>
             <Loader />
-            <Header />
-            <SideBar />
-            <div className="content-wrapper">
-                {/* <DashBoard/> */}
-                {children}
-            </div>
+            {children}
             <Footer />
         </div>
     )
