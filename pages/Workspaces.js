@@ -14,61 +14,61 @@ function WorkspacePage({ children }) {
         <TopHeader headerValue="Workspace Management" />
 
         <section className="content">
-          <div class="modal fade" id="modal-lg-new">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
+          <div className="modal fade" id="modal-lg-new">
+            <div className="modal-dialog modal-lg">
+              <div className="modal-content">
+                <div className="modal-header">
                   <button
                     type="button"
-                    class="close"
+                    className="close"
                     data-dismiss="modal"
                     aria-label="Close"
                   >
                     <span aria-hidden="true"></span>
                   </button>
                 </div>
-                <div class="modal-body">
-                  <div class="card card-primary">
-                    <div class="card-header">
-                      <h3 class="card-title">Add New Workspace</h3>
+                <div className="modal-body">
+                  <div className="card card-primary">
+                    <div className="card-header">
+                      <h3 className="card-title">Add New Workspace</h3>
                     </div>
 
                     <form>
-                      <div class="card-body">
-                        <div class="form-group">
+                      <div className="card-body">
+                        <div className="form-group">
                           <label for="workspace-name">Workspace Name</label>
                           <input
                             type="text"
-                            class="form-control"
+                            className="form-control"
                             id="workspace-name"
                             placeholder="Enter Workspace name"
                           ></input>
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="workspace-address">
                             Workspace Address
                           </label>
                           <textarea
-                            class="form-control"
+                            className="form-control"
                             rows="2"
                             id="workspace-address"
                             placeholder="Enter address"
                           ></textarea>
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="workspace-description">
                             Workspace Description
                           </label>
                           <textarea
-                            class="form-control"
+                            className="form-control"
                             rows="4"
                             id="workspace-description"
                             placeholder="Enter description"
                           ></textarea>
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="workspace-type">Workspace Type</label>
-                          <select class="form-control" id="workspace-type">
+                          <select className="form-control" id="workspace-type">
                             <option>Conference Hall</option>
                             <option>Meeting Room</option>
                             <option>Office Space</option>
@@ -76,175 +76,175 @@ function WorkspacePage({ children }) {
                             <option>Virtual Office</option>
                           </select>
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="workspace-type">
                             Workspace Facilities
                           </label>
-                          <div class="form-check">
+                          <div className="form-check">
                             <input
-                              class="form-check-input"
+                              className="form-check-input"
                               type="checkbox"
                             ></input>
-                            <label class="form-check-label">WiFi</label>
+                            <label className="form-check-label">WiFi</label>
                           </div>
-                          <div class="form-check">
+                          <div className="form-check">
                             <input
-                              class="form-check-input"
+                              className="form-check-input"
                               type="checkbox"
                             ></input>
-                            <label class="form-check-label">Electricity</label>
+                            <label className="form-check-label">Electricity</label>
                           </div>
-                          <div class="form-check">
+                          <div className="form-check">
                             <input
-                              class="form-check-input"
+                              className="form-check-input"
                               type="checkbox"
                             ></input>
-                            <label class="form-check-label">Food</label>
+                            <label className="form-check-label">Food</label>
                           </div>
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="owner-name">Owner Name</label>
                           <input
                             type="text"
-                            class="form-control"
+                            className="form-control"
                             id="owner-name"
                             placeholder="Enter name"
                           ></input>
                         </div>
-                        <div class="bootstrap-timepicker">
-                          <div class="form-group">
+                        <div className="bootstrap-timepicker">
+                          <div className="form-group">
                             <label for="open-time">
                               Opening Time (WeekDays)
                             </label>
 
                             <div
-                              class="input-group date"
+                              className="input-group date"
                               id="timepicker"
                               data-target-input="nearest"
                             >
                               <input
                                 type="text"
-                                class="form-control datetimepicker-input"
+                                className="form-control datetimepicker-input"
                                 data-target="#timepicker"
                                 id="weekdays-opening"
                               />
                               <div
-                                class="input-group-append"
+                                className="input-group-append"
                                 data-target="#timepicker"
                                 data-toggle="datetimepicker"
                               >
-                                <div class="input-group-text">
-                                  <i class="far fa-clock"></i>
+                                <div className="input-group-text">
+                                  <i className="far fa-clock"></i>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div class="bootstrap-timepicker">
-                          <div class="form-group">
+                        <div className="bootstrap-timepicker">
+                          <div className="form-group">
                             <label for="open-time">
                               Closing Time (WeekDays)
                             </label>
 
                             <div
-                              class="input-group date"
+                              className="input-group date"
                               id="timepicker"
                               data-target-input="nearest"
                             >
                               <input
                                 type="text"
-                                class="form-control datetimepicker-input"
+                                className="form-control datetimepicker-input"
                                 data-target="#timepicker"
                                 id="weekdays-closing"
                               />
                               <div
-                                class="input-group-append"
+                                className="input-group-append"
                                 data-target="#timepicker"
                                 data-toggle="datetimepicker"
                               >
-                                <div class="input-group-text">
-                                  <i class="far fa-clock"></i>
+                                <div className="input-group-text">
+                                  <i className="far fa-clock"></i>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div class="bootstrap-timepicker">
-                          <div class="form-group">
+                        <div className="bootstrap-timepicker">
+                          <div className="form-group">
                             <label for="open-time">
                               Opening Time (Weekend)
                             </label>
 
                             <div
-                              class="input-group date"
+                              className="input-group date"
                               id="timepicker"
                               data-target-input="nearest"
                             >
                               <input
                                 type="text"
-                                class="form-control datetimepicker-input"
+                                className="form-control datetimepicker-input"
                                 data-target="#timepicker"
                                 id="weekend-opening"
                               />
                               <div
-                                class="input-group-append"
+                                className="input-group-append"
                                 data-target="#timepicker"
                                 data-toggle="datetimepicker"
                               >
-                                <div class="input-group-text">
-                                  <i class="far fa-clock"></i>
+                                <div className="input-group-text">
+                                  <i className="far fa-clock"></i>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div class="bootstrap-timepicker">
-                          <div class="form-group">
+                        <div className="bootstrap-timepicker">
+                          <div className="form-group">
                             <label for="open-time">
                               Closing Time (Weekend)
                             </label>
 
                             <div
-                              class="input-group date"
+                              className="input-group date"
                               id="timepicker"
                               data-target-input="nearest"
                             >
                               <input
                                 type="text"
-                                class="form-control datetimepicker-input"
+                                className="form-control datetimepicker-input"
                                 data-target="#timepicker"
                                 id="weekend-closing"
                               />
                               <div
-                                class="input-group-append"
+                                className="input-group-append"
                                 data-target="#timepicker"
                                 data-toggle="datetimepicker"
                               >
-                                <div class="input-group-text">
-                                  <i class="far fa-clock"></i>
+                                <div className="input-group-text">
+                                  <i className="far fa-clock"></i>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="exampleInputFile">Workspace Image</label>
-                          <div class="input-group">
-                            <div class="custom-file">
+                          <div className="input-group">
+                            <div className="custom-file">
                               <input
                                 type="file"
-                                class="custom-file-input"
+                                className="custom-file-input"
                                 id="workspace-image"
                               ></input>
                               <label
-                                class="custom-file-label"
+                                className="custom-file-label"
                                 for="workspace-image"
                               >
                                 Choose file
                               </label>
                             </div>
-                            <div class="input-group-append">
-                              <span class="input-group-text">Upload</span>
+                            <div className="input-group-append">
+                              <span className="input-group-text">Upload</span>
                             </div>
                           </div>
                         </div>
@@ -252,15 +252,15 @@ function WorkspacePage({ children }) {
                     </form>
                   </div>
                 </div>
-                <div class="modal-footer justify-content-between">
+                <div className="modal-footer justify-content-between">
                   <button
                     type="button"
-                    class="btn btn-danger"
+                    className="btn btn-danger"
                     data-dismiss="modal"
                   >
                     Close
                   </button>
-                  <button type="button" class="btn btn-success">
+                  <button type="button" className="btn btn-success">
                     Create New Workspace
                   </button>
                 </div>
@@ -268,58 +268,58 @@ function WorkspacePage({ children }) {
             </div>
           </div>
 
-          <div class="modal fade" id="modal-lg-edit">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h4 class="modal-title">Edit Workspace</h4>
+          <div className="modal fade" id="modal-lg-edit">
+            <div className="modal-dialog modal-lg">
+              <div className="modal-content">
+                <div className="modal-header">
+                  <h4 className="modal-title">Edit Workspace</h4>
                   <button
                     type="button"
-                    class="close"
+                    className="close"
                     data-dismiss="modal"
                     aria-label="Close"
                   >
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="modal-body">
-                  <div class="card card-primary">
+                <div className="modal-body">
+                  <div className="card card-primary">
                     <form>
-                      <div class="card-body">
-                        <div class="form-group">
+                      <div className="card-body">
+                        <div className="form-group">
                           <label for="workspace-name">Workspace Name</label>
                           <input
                             type="text"
-                            class="form-control"
+                            className="form-control"
                             id="workspace-name"
                             placeholder="Enter Workspace name"
                           ></input>
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="workspace-address">
                             Workspace Address
                           </label>
                           <textarea
-                            class="form-control"
+                            className="form-control"
                             rows="2"
                             id="workspace-address"
                             placeholder="Enter address"
                           ></textarea>
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="workspace-description">
                             Workspace Description
                           </label>
                           <textarea
-                            class="form-control"
+                            className="form-control"
                             rows="4"
                             id="workspace-description"
                             placeholder="Enter description"
                           ></textarea>
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="workspace-type">Workspace Type</label>
-                          <select class="form-control" id="workspace-type">
+                          <select className="form-control" id="workspace-type">
                             <option>Conference Hall</option>
                             <option>Meeting Room</option>
                             <option>Office Space</option>
@@ -327,175 +327,175 @@ function WorkspacePage({ children }) {
                             <option>Virtual Office</option>
                           </select>
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="workspace-type">
                             Workspace Facilities
                           </label>
-                          <div class="form-check">
+                          <div className="form-check">
                             <input
-                              class="form-check-input"
+                              className="form-check-input"
                               type="checkbox"
                             ></input>
-                            <label class="form-check-label">WiFi</label>
+                            <label className="form-check-label">WiFi</label>
                           </div>
-                          <div class="form-check">
+                          <div className="form-check">
                             <input
-                              class="form-check-input"
+                              className="form-check-input"
                               type="checkbox"
                             ></input>
-                            <label class="form-check-label">Electricity</label>
+                            <label className="form-check-label">Electricity</label>
                           </div>
-                          <div class="form-check">
+                          <div className="form-check">
                             <input
-                              class="form-check-input"
+                              className="form-check-input"
                               type="checkbox"
                             ></input>
-                            <label class="form-check-label">Food</label>
+                            <label className="form-check-label">Food</label>
                           </div>
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="owner-name">Owner Name</label>
                           <input
                             type="text"
-                            class="form-control"
+                            className="form-control"
                             id="owner-name"
                             placeholder="Enter name"
                           ></input>
                         </div>
-                        <div class="bootstrap-timepicker">
-                          <div class="form-group">
+                        <div className="bootstrap-timepicker">
+                          <div className="form-group">
                             <label for="open-time">
                               Opening Time (WeekDays)
                             </label>
 
                             <div
-                              class="input-group date"
+                              className="input-group date"
                               id="timepicker"
                               data-target-input="nearest"
                             >
                               <input
                                 type="text"
-                                class="form-control datetimepicker-input"
+                                className="form-control datetimepicker-input"
                                 data-target="#timepicker"
                                 id="weekdays-opening"
                               />
                               <div
-                                class="input-group-append"
+                                className="input-group-append"
                                 data-target="#timepicker"
                                 data-toggle="datetimepicker"
                               >
-                                <div class="input-group-text">
-                                  <i class="far fa-clock"></i>
+                                <div className="input-group-text">
+                                  <i className="far fa-clock"></i>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div class="bootstrap-timepicker">
-                          <div class="form-group">
+                        <div className="bootstrap-timepicker">
+                          <div className="form-group">
                             <label for="open-time">
                               Closing Time (WeekDays)
                             </label>
 
                             <div
-                              class="input-group date"
+                              className="input-group date"
                               id="timepicker"
                               data-target-input="nearest"
                             >
                               <input
                                 type="text"
-                                class="form-control datetimepicker-input"
+                                className="form-control datetimepicker-input"
                                 data-target="#timepicker"
                                 id="weekdays-closing"
                               />
                               <div
-                                class="input-group-append"
+                                className="input-group-append"
                                 data-target="#timepicker"
                                 data-toggle="datetimepicker"
                               >
-                                <div class="input-group-text">
-                                  <i class="far fa-clock"></i>
+                                <div className="input-group-text">
+                                  <i className="far fa-clock"></i>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div class="bootstrap-timepicker">
-                          <div class="form-group">
+                        <div className="bootstrap-timepicker">
+                          <div className="form-group">
                             <label for="open-time">
                               Opening Time (Weekend)
                             </label>
 
                             <div
-                              class="input-group date"
+                              className="input-group date"
                               id="timepicker"
                               data-target-input="nearest"
                             >
                               <input
                                 type="text"
-                                class="form-control datetimepicker-input"
+                                className="form-control datetimepicker-input"
                                 data-target="#timepicker"
                                 id="weekend-opening"
                               />
                               <div
-                                class="input-group-append"
+                                className="input-group-append"
                                 data-target="#timepicker"
                                 data-toggle="datetimepicker"
                               >
-                                <div class="input-group-text">
-                                  <i class="far fa-clock"></i>
+                                <div className="input-group-text">
+                                  <i className="far fa-clock"></i>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div class="bootstrap-timepicker">
-                          <div class="form-group">
+                        <div className="bootstrap-timepicker">
+                          <div className="form-group">
                             <label for="open-time">
                               Closing Time (Weekend)
                             </label>
 
                             <div
-                              class="input-group date"
+                              className="input-group date"
                               id="timepicker"
                               data-target-input="nearest"
                             >
                               <input
                                 type="text"
-                                class="form-control datetimepicker-input"
+                                className="form-control datetimepicker-input"
                                 data-target="#timepicker"
                                 id="weekend-closing"
                               />
                               <div
-                                class="input-group-append"
+                                className="input-group-append"
                                 data-target="#timepicker"
                                 data-toggle="datetimepicker"
                               >
-                                <div class="input-group-text">
-                                  <i class="far fa-clock"></i>
+                                <div className="input-group-text">
+                                  <i className="far fa-clock"></i>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                           <label for="exampleInputFile">Workspace Image</label>
-                          <div class="input-group">
-                            <div class="custom-file">
+                          <div className="input-group">
+                            <div className="custom-file">
                               <input
                                 type="file"
-                                class="custom-file-input"
+                                className="custom-file-input"
                                 id="workspace-image"
                               ></input>
                               <label
-                                class="custom-file-label"
+                                className="custom-file-label"
                                 for="workspace-image"
                               >
                                 Choose file
                               </label>
                             </div>
-                            <div class="input-group-append">
-                              <span class="input-group-text">Upload</span>
+                            <div className="input-group-append">
+                              <span className="input-group-text">Upload</span>
                             </div>
                           </div>
                         </div>
@@ -503,15 +503,15 @@ function WorkspacePage({ children }) {
                     </form>
                   </div>
                 </div>
-                <div class="modal-footer justify-content-between">
+                <div className="modal-footer justify-content-between">
                   <button
                     type="button"
-                    class="btn btn-danger"
+                    className="btn btn-danger"
                     data-dismiss="modal"
                   >
                     Close
                   </button>
-                  <button type="button" class="btn btn-success">
+                  <button type="button" className="btn btn-success">
                     Update Workspace
                   </button>
                 </div>
@@ -519,35 +519,35 @@ function WorkspacePage({ children }) {
             </div>
           </div>
 
-          <div class="modal fade" id="modal-danger">
-            <div class="modal-dialog">
-              <div class="modal-content bg-danger">
-                <div class="modal-header">
-                  <h4 class="modal-title">Confirm Delete</h4>
+          <div className="modal fade" id="modal-danger">
+            <div className="modal-dialog">
+              <div className="modal-content bg-danger">
+                <div className="modal-header">
+                  <h4 className="modal-title">Confirm Delete</h4>
                   <button
                     type="button"
-                    class="close"
+                    className="close"
                     data-dismiss="modal"
                     aria-label="Close"
                   >
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="modal-body">
+                <div className="modal-body">
                   <p>
                     Do you really want to delete this workspace? This action
                     cannot be undone&hellip;
                   </p>
                 </div>
-                <div class="modal-footer justify-content-between">
+                <div className="modal-footer justify-content-between">
                   <button
                     type="button"
-                    class="btn btn-outline-light"
+                    className="btn btn-outline-light"
                     data-dismiss="modal"
                   >
                     Close
                   </button>
-                  <button type="button" class="btn btn-outline-light">
+                  <button type="button" className="btn btn-outline-light">
                     Confirm Delete
                   </button>
                 </div>
@@ -563,7 +563,7 @@ function WorkspacePage({ children }) {
                     <h3 className="card-title">Workspaces</h3>
                     <a
                       href="#"
-                      class="btn btn-sm btn-success float-right"
+                      className="btn btn-sm btn-success float-right"
                       data-toggle="modal"
                       data-target="#modal-lg-new"
                     >
@@ -601,10 +601,10 @@ function WorkspacePage({ children }) {
                           <td>Conference Hall</td>
                           <td>
                             {" "}
-                            <div class="text-center">
+                            <div className="text-center">
                               <a
                                 href="#"
-                                class="btn btn-sm btn-primary"
+                                className="btn btn-sm btn-primary"
                                 data-toggle="modal"
                                 data-target="#modal-lg-edit"
                               >
@@ -613,7 +613,7 @@ function WorkspacePage({ children }) {
                               &nbsp;
                               <a
                                 href="#"
-                                class="btn btn-sm btn-danger"
+                                className="btn btn-sm btn-danger"
                                 data-toggle="modal"
                                 data-target="#modal-danger"
                               >

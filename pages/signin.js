@@ -1,17 +1,17 @@
 import React from "react";
 import { useState } from "react";
-import { auth } from "../firebase/clientApp";
+// import { auth } from "../firebase/clientApp";
 
 function Signin() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     console.log(email, password);
-    const result = await auth.createUserWithEmailAndPassword(email, password);
-    await result.user.updateProfile({
-      email: email,
-    });
+    // const result = await auth.createUserWithEmailAndPassword(email, password);
+    // await result.user.updateProfile({
+    //   email: email,
+    // });
   };
   return (
     <div class="hold-transition login-page">
@@ -75,7 +75,7 @@ function Signin() {
             </div>
 
             <p class="mb-1">
-              <a href="forgot-password.html">I forgot my password</a>
+              <a href="#">I forgot my password</a>
             </p>
           </div>
         </div>
