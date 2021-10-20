@@ -1,20 +1,17 @@
 import React from "react";
-import SideBar from "../components/Layout/SideBar/sidebar";
 import TopHeader from "../components/Layout/TopHeader/topHeader";
-import Dashboard from "../components/Layout/Dashboard/dashboard";
-import Footer from "../components/Layout/Footer/footer";
 
-function BookingRequests({ children }) {
+function Saleshistory({ children }) {
   return (
     <div>
-      <TopHeader headerValue="Booking Requests" />
+      <TopHeader headerValue="Sales History" />
       <section className="content">
         <div className="container-fluid">
           <div className="row">
             <div className="col-12">
               <div className="card">
                 <div className="card-header">
-                  <h3 className="card-title">Booking Requests</h3>
+                  <h3 className="card-title">Sales History</h3>
                   <div className="card-tools">
                     <div
                       className="input-group input-group-sm"
@@ -90,4 +87,4 @@ function BookingRequests({ children }) {
   );
 }
 
-export default BookingRequests;
+export default Saleshistory;

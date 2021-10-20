@@ -12,8 +12,6 @@ export default function Home() {
         <title>Dubai Desk | Admin</title>
         <link rel="icon" href="/Dubai Desk1.png" />
       </Head>
-      <DashBoard/>
-
     </div>
   );
 }
