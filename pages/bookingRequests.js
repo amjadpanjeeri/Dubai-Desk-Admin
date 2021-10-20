@@ -51,10 +51,10 @@ function BookingRequests({ children }) {
                         <td>18/10/2021</td>
                         <td>9:51 PM</td>
                         <td>11:52 PM</td>
-                        <td> <div class="text-center">
-                <a href="#" class="btn btn-sm btn-primary">Edit</a>
+                        <td> <div className="text-center">
+                <a href="#" className="btn btn-sm btn-primary">Edit</a>
                 &nbsp;
-                <a href="#" class="btn btn-sm btn-danger">Delete</a>
+                <a href="#" className="btn btn-sm btn-danger">Delete</a>
               </div></td>
                       
                       </tr>
